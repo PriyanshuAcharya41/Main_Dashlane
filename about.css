@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+@font-face {
+    font-family: inter;
+    src: url("Adamina-Regular.woff2");
+}
+.navbar{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    #logo{
+        height: 80%;
+        width: 22%;
+        background-color: salmon;
+    }
+    #nav_2{
+        height: 80%;
+        width: 60%;
+        background-color: rgb(170, 122, 116);
+    }
+    #SignUp{
+        height: 80%;
+        width: 18%;
+        background-color: salmon;
+    }
+}
+.second{
+    font-family: inter;
+    max-height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    .innerbutton{
+        display: flex;
+        justify-content: center;
+        button{
+            width: 15vw;
+            
+            h1{
+                font-family: inter;
+                font-size: 0.9rem;
+                font-weight: 200;
+            }
+        }
+    }
+    
+    
+}
+.secondone{
+    display: flex;
+    justify-content: center;
+}
+
+.secondtwo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.aboutus{
+    height: 80%;
+    margin-top: 4vh;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #05003B;
+    overflow-y: auto;
+    font-family: inter;
+    h3{
+        padding-left: 30px;
+        padding: 30px 30px;
+        /* transform: translateY(20%);     */
+        font-size: 1.1rem;
+        
+        font-family: inter;
+        align-content: center;
+    }
+    h3 span{
+        color: #00703A;
+    }
+}
+.aboutus_image{
+    height: 80vh;
+    width: 25%;
+    overflow: hidden;
+
+    
+}
+.about_image{
+    height: 32%;
+    width: 100%;
+    
+    margin-bottom: 2%;
+    
+    #image1{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #image2{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #image3{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        
+    }
+    
+}
+
+.vision_mission{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #heading_vision_mission{
+        height: 90%;
+        width: 30%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+        font-family: inter;
+    }
+}
+
+/* MAIN  PAGE OF VISION AND MISSION-------------------------------------------------------------------------------- */
+.main_vision_mission{
+    height: 80vh;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_main_vision_mission{
+        height: 90%;
+        width: 90%;
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        #vision{
+            height: 90%;
+            width: 40%;
+            background-color: aliceblue;
+            #heading_vis{
+                height: 20%;
+                width: 100%;
+                background-color: burlywood;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: inter;
+            }
+            #vision_para{
+                height: 80%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+                #v_para{
+                    height: 80%;
+                    width: 80%;
+                    font-family: inter;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        #mission{
+            height: 90%;
+            width: 40%;
+            background-color: aliceblue;
+            #heading_mis{
+                height: 20%;
+                width: 100%;
+                font-family: inter;
+                background-color: burlywood;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #mission_para{
+                height: 80%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+                #m_para{
+                    height: 80%;
+                    width: 90%;
+                    font-family: inter;
+                    font-size: 1.1rem;
+                    
+                }
+            }
+        }
+    }
+}
+
+/* OUR VALUES----------------------------------------------------------------------------------- */
+.dashlane_values{
+    height: 10vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #heading_dashlane{
+        height: 90%;
+        width: 50%;
+        background-color: black;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: inter;
+    }
+}
+.dashlane_values_image{
+    height: 80vh;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_dashlane_values{
+        height: 90%;
+        width: 80%;
+        /* background-color: black; */
+        img{
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+/* OUR HAPPY CLIENTS-------------------------------------------------------------------------------- */
+@keyframes moves {
+    from{
+        transform:translateX(25%);
+    }
+    to{
+        transform: translateX(calc(-165vw));
+    }
+    
+}
+.clients{
+    height: 80vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    overflow: hidden;
+    #clients_title{
+        height: 15%;
+        width: 100%;
+        background-color: rgb(72, 82, 92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #clients_title_text{
+            height: 90%;
+            width: 40%;
+            background-color: rgb(58, 55, 55);
+        }
+    }
+
+    .clients_slider{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(161, 138, 138);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        
+        
+        /* ?padding: 2vh; */
+        #slider_container{
+            
+            height: 80%;
+            width: 100%;
+            background-color: salmon;
+            display: inline-block;
+            align-content: center;
+            white-space: nowrap;
+            #slides{
+                animation: moves 10s linear infinite;
+                height: 80%;
+                width: 30%;
+                background-color: black;
+                border-radius: 10px;
+                display: inline-block;
+                overflow-x: hidden;
+                color: white;
+                position: relative;
+            }
+            
+        }
+        
+
+
+        
+    }
+
+    
+}
+
+
+/* Footer---------------------------------------------------------------------------------------------------- */
+.home_footer{
+    height: 90vh;
+    width: 100%;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_footer{
+        height: 80%;
+        width: 90%;
+        background-color: beige;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    .five_inner{
+        height: 90%;
+        width: 19%;
+        background-color: black;
+    }
+    #five_logo{
+        width:25%;
+        background-color: red;
+    }
+    #five_services{
+        width: 19%;
+        background-color: rgb(122, 106, 106);
+    }
+    #five_companies{
+        width: 19%;
+        background-color: rgb(18, 79, 87);
+    }
+    #five_Contact{
+        width: 19%;
+        background-color: rgb(185, 221, 255);
+    }
+    #five_address{
+        width: 19%;
+        background-color: rgb(141, 107, 107);
+    }
+}

@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+.navbar{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    #logo{
+        height: 80%;
+        width: 22%;
+        background-color: salmon;
+    }
+    #nav_2{
+        height: 80%;
+        width: 60%;
+        background-color: rgb(170, 122, 116);
+    }
+    #SignUp{
+        height: 80%;
+        width: 18%;
+        background-color: salmon;
+    }
+}
+.title_consultancy{
+    height: 16%;
+    width: 100%;
+    background-color: rgb(161, 161, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_text{
+        height: 90%;
+        width: 50%;
+        background-color: red;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+}
+.brochure{
+    height: 10%;
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_brochure{
+        height: 90%;
+        width: 30%;
+        background-color:rebeccapurple;
+    }
+}
+
+/* MAIN PAGE OF CONSULTANCY---------------------------------------------------------------------------- */
+.main_consultancy{
+    height: 90vh;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_main_consultancy{
+        height: 95%;
+        width: 90%;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #left_inner{
+            height: 100%;
+            width: 50%;
+            background-color: pink;
+            #left_upper{
+                height: 50%;
+                width: 90%;
+                background-color: cornflowerblue;
+            }
+            #left_lower{
+                height: 50%;
+                width: 90%;
+                background-color: goldenrod;
+            }
+        }
+        #right_inner{
+            height: 100%;
+            width: 50%;
+            background-color: rgb(77, 131, 113);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #right_image{
+                height: 70%;
+                width: 70%;
+                background-color: black;
+            }
+        }
+    }
+
+}
+
+/* SERVICES OF CONSULTANCY -------------------------------------------------------------------------- */
+.services{
+    height: 110vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .services_main{
+        height: 96%;
+        width: 90%;
+        background-color: firebrick;
+
+        #services_title{
+            height: 10%;
+            width: 100%;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_services_title{
+                height: 90%;
+                width: 30%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        #services_para{
+            height: 30%;
+            width: 100%;
+            background-color: burlywood;
+        }
+        #text_image{
+            height: 60%;
+            width: 100%;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:5%;
+            #services_image{
+                height: 80%;
+                width: 40%;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #services_text{
+                height: 80%;
+                width: 50%;
+                
+                background-color: greenyellow;
+            }
+        }
+    }
+
+}
+
+/* SERVICES SECTION OVER */
+
+
+/* TOPOGRAPHICAL SURVEY--------------------------------------------------------------------------------- */
+.Topographical{
+    height: 110vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Topographical_main{
+        height: 96%;
+        width: 90%;
+        background-color: firebrick;
+
+        #Topographical_title{
+            height: 10%;
+            width: 100%;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_Topographical_title{
+                height: 90%;
+                width: 30%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        #Topographical_para{
+            height: 30%;
+            width: 100%;
+            background-color: burlywood;
+        }
+        #text_image{
+            height: 60%;
+            width: 100%;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:5%;
+            #Topographical_image{
+                height: 80%;
+                width: 40%;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #Topographical_text{
+                height: 80%;
+                width: 50%;
+                
+                background-color: greenyellow;
+            }
+        }
+    }
+
+}
+
+/* EQUIPMENTS SECTION----------------------------------------------------------------------------- */
+.Equipments{
+    height: 110vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Equipments_main{
+        height: 96%;
+        width: 90%;
+        background-color: firebrick;
+
+        #Equipments_title{
+            height: 10%;
+            width: 100%;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_Equipments_title{
+                height: 90%;
+                width: 30%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        #Equipments_para{
+            height: 30%;
+            width: 100%;
+            background-color: burlywood;
+        }
+        #text_image{
+            height: 60%;
+            width: 100%;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:5%;
+            #Equipments_image{
+                height: 80%;
+                width: 40%;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #Equipments_text{
+                height: 80%;
+                width: 50%;
+                
+                background-color: greenyellow;
+            }
+        }
+    }
+
+}
+
+/* OUR SOFTWARE ARSENAL------------------------------------------------------------------------------- */
+.Software{
+    height: 110vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Software_main{
+        height: 96%;
+        width: 90%;
+        background-color: firebrick;
+
+        #Software_title{
+            height: 10%;
+            width: 100%;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_Software_title{
+                height: 90%;
+                width: 30%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        #Software_para{
+            height: 30%;
+            width: 100%;
+            background-color: burlywood;
+        }
+        #text_image{
+            height: 60%;
+            width: 100%;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:5%;
+            #Software_image{
+                height: 80%;
+                width: 40%;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #Software_text{
+                height: 90%;
+                width: 50%;
+                border-radius: 10px;
+                background-color: greenyellow;
+            }
+        }
+    }
+
+}
+
+/* OUR HAPPY CLIENTS-------------------------------------------------------------------------------- */
+@keyframes moves {
+    from{
+        transform:translateX(25%);
+    }
+    to{
+        transform: translateX(calc(-180vw));
+    }
+    
+}
+.clients{
+    height: 80vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    overflow: hidden;
+    #clients_title{
+        height: 15%;
+        width: 100%;
+        background-color: rgb(72, 82, 92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #clients_title_text{
+            height: 90%;
+            width: 40%;
+            background-color: rgb(58, 55, 55);
+        }
+    }
+
+    .clients_slider{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(161, 138, 138);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        
+        
+        /* ?padding: 2vh; */
+        #slider_container{
+            
+            height: 80%;
+            width: 100%;
+            background-color: salmon;
+            display: inline-block;
+            align-content: center;
+            white-space: nowrap;
+            #slides{
+                animation: moves 10s linear infinite;
+                height: 80%;
+                width: 30%;
+                background-color: black;
+                border-radius: 10px;
+                display: inline-block;
+                overflow-x: hidden;
+                color: white;
+                position: relative;
+            }
+            
+        }
+    }
+}
+
+/* FOOTER------------------------------------------------------------------------------------------- */
+.home_footer{
+    height: 90vh;
+    width: 100%;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_footer{
+        height: 80%;
+        width: 90%;
+        background-color: beige;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    .five_inner{
+        height: 90%;
+        width: 19%;
+        background-color: black;
+    }
+    #five_logo{
+        width:25%;
+        background-color: red;
+    }
+    #five_services{
+        width: 19%;
+        background-color: rgb(122, 106, 106);
+    }
+    #five_companies{
+        width: 19%;
+        background-color: rgb(18, 79, 87);
+    }
+    #five_Contact{
+        width: 19%;
+        background-color: rgb(185, 221, 255);
+    }
+    #five_address{
+        width: 19%;
+        background-color: rgb(141, 107, 107);
+    }
+}

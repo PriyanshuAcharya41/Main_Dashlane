@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+.navbar{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    #logo{
+        height: 80%;
+        width: 22%;
+        background-color: salmon;
+    }
+    #nav_2{
+        height: 80%;
+        width: 60%;
+        background-color: rgb(170, 122, 116);
+    }
+    #SignUp{
+        height: 80%;
+        width: 18%;
+        background-color: salmon;
+    }
+}
+
+
+.title_trading{
+    height: 16%;
+    width: 100%;
+    background-color: rgb(161, 161, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_text{
+        height: 90%;
+        width: 50%;
+        background-color: red;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+}
+.brochure{
+    height: 10%;
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_brochure{
+        height: 90%;
+        width: 30%;
+        background-color:rebeccapurple;
+    }
+}
+/* MAIN PAGE OF TRADING-------------------------------------------------------------------------- */
+.main_trading{
+    height: 80vh;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_main_trading{
+        height: 95%;
+        width: 90%;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #left_inner{
+            height: 100%;
+            width: 70%;
+            background-color: pink;
+            #left_upper{
+                height: 100%;
+                width: 100%;
+                background-color: cornflowerblue;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                #inner_left_upper_para{
+                    height: 80%;
+                    width: 90%;
+                    background-color: aliceblue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            /* #left_lower{
+                height: 50%;
+                width: 90%;
+                background-color: goldenrod;
+            } */
+        }
+        #right_inner{
+            height: 100%;
+            width: 30%;
+            background-color: rgb(77, 131, 113);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #right_image{
+                height: 70%;
+                width: 100%;
+                background-color: black;
+            }
+        }
+    }
+
+}
+/* SPECIALIZATION---------------------------------------------------------------------- */
+@keyframes moves1 {
+    0%{
+        transform:translate(0);
+    }
+    100%{
+        transform: translate(-250%);
+    }
+    
+   
+    
+}
+.specialization{
+    height: 100vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    overflow: hidden;
+    #specialization_title{
+        height: 15%;
+        width: 100%;
+        background-color: rgb(72, 82, 92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #specialization_title_text{
+            height: 90%;
+            width: 40%;
+            background-color: rgb(58, 55, 55);
+        }
+    }
+
+    .specialization_slider{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(161, 138, 138);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        
+        
+        /* ?padding: 2vh; */
+        #slider_container{
+            #slider_main_container{
+                height: 100%;
+                width: 100%;
+                
+                /* background-color: aliceblue; */
+                animation: moves1 20s linear infinite;
+                #slides{
+                    
+                    height: 80%; 
+                    width: 30%;
+                    background-color: black;
+                    border-radius: 10px;
+                    display: inline-block;
+                    overflow-x: hidden;
+                    color: white;
+                    position: relative;
+                }
+                
+            }
+            #slider_main_container:hover{
+                animation-play-state: paused;
+                
+            }
+            
+            height: 80%;
+            width: 100%;
+            background-color: salmon;
+            display: inline-block;
+            align-content: center;
+            white-space: nowrap;
+            
+            
+        }
+        
+        
+        
+
+
+        
+    }
+
+    
+}
+
+/* OUR HAPPY CLIENTS--------------------------------------------------------------------- */
+@keyframes moves {
+    from{
+        transform:translateX(25%);
+    }
+    to{
+        transform: translateX(calc(-165vw));
+    }
+    
+}
+.clients{
+    height: 80vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    overflow: hidden;
+    #clients_title{
+        height: 15%;
+        width: 100%;
+        background-color: rgb(72, 82, 92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #clients_title_text{
+            height: 90%;
+            width: 40%;
+            background-color: rgb(58, 55, 55);
+        }
+    }
+
+    .clients_slider{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(161, 138, 138);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        
+        
+        /* ?padding: 2vh; */
+        #slider_container{
+            
+            height: 80%;
+            width: 100%;
+            background-color: salmon;
+            display: inline-block;
+            align-content: center;
+            white-space: nowrap;
+            #slides{
+                animation: moves 10s linear infinite;
+                height: 80%;
+                width: 30%;
+                background-color: black;
+                border-radius: 10px;
+                display: inline-block;
+                overflow-x: hidden;
+                color: white;
+                position: relative;
+            }
+            
+        }
+        
+
+
+        
+    }
+
+    
+}
+
+
+/* Footer---------------------------------------------------------------------------------------------------- */
+.home_footer{
+    height: 90vh;
+    width: 100%;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_footer{
+        height: 80%;
+        width: 90%;
+        background-color: beige;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    .five_inner{
+        height: 90%;
+        width: 19%;
+        background-color: black;
+    }
+    #five_logo{
+        width:25%;
+        background-color: red;
+    }
+    #five_services{
+        width: 19%;
+        background-color: rgb(122, 106, 106);
+    }
+    #five_companies{
+        width: 19%;
+        background-color: rgb(18, 79, 87);
+    }
+    #five_Contact{
+        width: 19%;
+        background-color: rgb(185, 221, 255);
+    }
+    #five_address{
+        width: 19%;
+        background-color: rgb(141, 107, 107);
+    }
+}

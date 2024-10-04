@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+.navbar{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    #logo{
+        height: 80%;
+        width: 22%;
+        background-color: salmon;
+    }
+    #nav_2{
+        height: 80%;
+        width: 60%;
+        background-color: rgb(170, 122, 116);
+    }
+    #SignUp{
+        height: 80%;
+        width: 18%;
+        background-color: salmon;
+    }
+}
+
+/* Construction home-------------------------------------------------------------------------------------- */
+.construction_home{
+    height: 80vh;
+    width: 100%;
+    background-color: gold;
+    
+    #construction_upper{
+        height: 50%;
+        width: 100%;
+        background-color: rebeccapurple;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        #left_upper{
+            height: 90%;
+            border-radius: 2vw;
+            background-color: red;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_left_upper{
+                a{
+                    text-decoration: none;
+                    color:white;
+                    h1{
+                        text-align: center;
+                    
+                    }
+                }
+            }
+            
+        }
+        #right_upper{
+            height: 90%;
+            border-radius: 2vw;
+            width: 30%;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_right_upper{
+                a{
+                    text-decoration: none;
+                    color:white;
+                    h1{
+                        text-align: center;
+                    
+                    }
+                }
+            }
+            
+        }
+    }
+    #construction_lower{
+        height: 50%;
+        width: 100%;
+        background-color: darkcyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #center_lower{
+            height: 90%;
+            width: 30%;
+            border-radius: 2vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #inner_center_lower{
+                a{
+                    text-decoration: none;
+                    color:white;
+                    h1{
+                        text-align: center;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+/* OUR HAPPY CLIENTS---------------------------------------------------------------------------------------- */
+@keyframes moves {
+    from{
+        transform:translateX(25%);
+    }
+    to{
+        transform: translateX(calc(-165vw));
+    }
+    
+}
+.clients{
+    height: 80vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    overflow: hidden;
+    #clients_title{
+        height: 15%;
+        width: 100%;
+        background-color: rgb(72, 82, 92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #clients_title_text{
+            height: 90%;
+            width: 40%;
+            background-color: rgb(58, 55, 55);
+        }
+    }
+
+    .clients_slider{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(161, 138, 138);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        
+        
+        /* ?padding: 2vh; */
+        #slider_container{
+            
+            height: 80%;
+            width: 100%;
+            background-color: salmon;
+            display: inline-block;
+            align-content: center;
+            white-space: nowrap;
+            #slides{
+                animation: moves 10s linear infinite;
+                height: 80%;
+                width: 30%;
+                background-color: black;
+                border-radius: 10px;
+                display: inline-block;
+                overflow-x: hidden;
+                color: white;
+                position: relative;
+            }
+            
+        }
+        
+
+
+        
+    }
+
+    
+}
+
+
+/* Footer---------------------------------------------------------------------------------------------------- */
+.home_footer{
+    height: 90vh;
+    width: 100%;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_footer{
+        height: 80%;
+        width: 90%;
+        background-color: beige;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    .five_inner{
+        height: 90%;
+        width: 19%;
+        background-color: black;
+    }
+    #five_logo{
+        width:25%;
+        background-color: red;
+    }
+    #five_services{
+        width: 19%;
+        background-color: rgb(122, 106, 106);
+    }
+    #five_companies{
+        width: 19%;
+        background-color: rgb(18, 79, 87);
+    }
+    #five_Contact{
+        width: 19%;
+        background-color: rgb(185, 221, 255);
+    }
+    #five_address{
+        width: 19%;
+        background-color: rgb(141, 107, 107);
+    }
+}
