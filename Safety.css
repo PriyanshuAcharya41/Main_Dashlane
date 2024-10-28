@@ -5,60 +5,135 @@
 body{
     height: 100vh;
     width: 100%;
-    background-color: aliceblue;
+    background-color: white;
+}
+@font-face {
+    font-family: inter;
+    src: url("Adamina-Regular.woff2");
+}
+h3{
+    font-family: inter;
+    font-size:1rem;
 }
 .navbar{
     height: 20vh;
     width: 100%;
-    background-color: black;
+    background-color: #f5f5dc;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    overflow: hidden;
     #logo{
         height: 80%;
         width: 22%;
-        background-color: salmon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #inner_logo{
+            height: 70%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5vh;
+        }
+        
+    }
+    a{
+        text-decoration: none;
+        color:#05003A;
     }
     #nav_2{
         height: 80%;
         width: 60%;
-        background-color: rgb(170, 122, 116);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: inter;
+        font-size:0.8rem;
+        font-weight: 100;
+        h1{
+            font-weight: 600;
+        }
+        
+        h2:hover{
+            scale:1.2;
+            
+        }
     }
     #SignUp{
         height: 80%;
         width: 18%;
-        background-color: salmon;
+        
+        a{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                height: 40%;
+                width: 60%;
+                font-family: inter;
+                color:white;
+                background-color: #05003A;
+                border-style: none;
+                border:solid 1px white;
+                border-radius: 2vw;
+            }
+            button:hover{
+                font-size:1.2rem;
+                
+            }
+        }
+        
     }
 }
 .title_Safety{
     height: 16%;
     width: 100%;
-    background-color: rgb(161, 161, 224);
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_text{
         height: 90%;
         width: 50%;
-        background-color: red;
         display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #05003A;
     }
 }
 .brochure{
     height: 10%;
     width: 100%;
-    background-color: gold;
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_brochure{
         height: 90%;
-        width: 30%;
-        background-color:rebeccapurple;
+        width: 50%;
+        a{
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+            button{
+                color:white;
+                height: 80%;
+                width: 40%;
+                font-family: inter;
+                background-color: #05003A;
+                border-style: none;
+                border-radius: 10vw;
+
+            }
+            button:hover{
+                font-size:1.5rem;
+            }
+        }
     }
 }
 
@@ -66,43 +141,124 @@ body{
 .main_Safety{
     height: 90vh;
     width: 100%;
-    background-color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_main_Safety{
-        height: 95%;
+        height: 100%;
         width: 90%;
-        background-color: brown;
         display: flex;
         justify-content: center;
         align-items: center;
         #left_inner{
             height: 100%;
             width: 50%;
-            background-color: pink;
+            overflow: hidden;
             #left_upper{
-                height: 50%;
-                width: 90%;
-                background-color: cornflowerblue;
+                height: 100%;
+                width: 100%;
+                text-align: justify;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            align-content: center;
+            
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 140%;
+                li{ a{
+                    color:#00703A;
+                }
+                    
+                }
             }
-            #left_lower{
-                height: 50%;
-                width: 90%;
-                background-color: goldenrod;
             }
+            /* #left_lower{
+                height: 40%;
+                width: 100%;
+                text-align: justify;
+            display: flex;
+           
+            li{
+                a{
+                    color:#00703A;
+                }
+                
+            }
+            
+            a{
+                text-decoration: none;
+                text-decoration: underline;
+                color: #05003A;
+            }
+            h3{
+                padding: 0vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 140%;
+            }
+            } */
         }
         #right_inner{
-            height: 100%;
+            height: 80%;
             width: 50%;
-            background-color: rgb(77, 131, 113);
             display: flex;
             justify-content: center;
             align-items: center;
             #right_image{
-                height: 90%;
-                width: 90%;
-                background-color: black;
+                height:100%;
+                width: 100%;
+                 
+                background-size: cover;
+                background-position: center;
+                #left_right_image{
+                    height: 45%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    #upper_left_right_image{
+                        height: 100%;
+                        width: 45%;
+                        background-image: url("culverts1.webp");
+                        background-position: center;
+                        background-size: cover;
+                        border-top-left-radius: 2vw;
+                    }
+                    #lower_left_right_image{
+                        height: 100%;
+                        width: 45%;
+                        background-image: url("Highway\ 1.jpg");
+                        background-size: cover;
+                        background-position: center; 
+                        border-top-right-radius: 2vw;
+                    }
+                }
+                #right_right_image{
+                    height: 45%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin-top: 3vh;
+                    #upper_right_right_image{
+                        width: 45%;
+                        height: 100%;
+                        background-image: url("thermoplastic\ 1.webp");
+                        background-size: cover;
+                        background-position: center;
+                        border-bottom-left-radius: 2vw;
+                    }
+                    #lower_right_right_image{
+                        width: 45%;
+                        height: 100%;
+                        background-image: url("road\ studs\ 1.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        border-bottom-right-radius: 2vw;
+                    }
+                }
             }
         }
     }
@@ -113,26 +269,24 @@ body{
 .construction_direction{
     height: 100vh;
     width: 100%;
-    background-color: salmon;
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_construction_direction{
         height: 95%;
-        width: 98%;
-        background-color: seashell;
-
+        width: 100%;
+        background-color: #f5f5dc;
+        color:#05003A;
         #construction_heading{
             height: 14%;
             width: 100%;
-            background-color: rebeccapurple;
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_construction_heading{
                 height: 90%;
                 width: 30%;
-                background-color: aliceblue;
+                color:#05003A;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -141,19 +295,46 @@ body{
         #construction_text_image{
             height: 86%;
             width: 100%;
-            background-color: darkgray;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             #left_construction{
                 height: 90%;
                 width:45%;
-                background-color: rgb(196, 100, 100);
+                text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 150%;
+                font-family: inter;
+                span{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.6rem;
+                    font-family: inter;
+                    color:#00703A;
+                }
+                a{
+                    text-decoration: none;
+                    color:#00703A;
+                    text-decoration: underline;
+                }
+
+            }
+
             }
             #right_construction{
                 height: 90%;
                 width: 45%;
-                background-color: black;
+                background-image: url("Ships\ Sales\ &\ Purchase.png");
+                background-position: center;
+                background-size: cover;
+                
             }
             
         }
@@ -163,51 +344,67 @@ body{
 .construction_drain{
     height: 80vh;
     width: 100%;
-    background-color: red;
     #inner_construction_drain{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
+        background-color: #f5f5dc;
         #drain_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
             display: flex;
             align-items: center;
             #inner_drain_heading{
                 height: 90%;
-                width: 20%;
-                background-color: black;
+                width: 80%;
                 display: flex;
-                justify-content: center;
+                h1{
+                    padding-left:7vw;
+                }
                 align-items: center;
-                color:white;
+                color: #05003A;
             }
         }
         #drain_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_drain_para{
                 height: 90%;
                 width: 90%;
-                background-color: white;
+                text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 150%;
+            }
             }
         }
         #drain_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
+            background-color: white;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #drain_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                /* background-image: url("drains\ 1.jpeg");
+                background-position: center;
+                background-size: cover; */
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -217,51 +414,66 @@ body{
 .construction_Culverts{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Culverts{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Culverts_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Culverts_heading{
                 height: 90%;
                 width: 20%;
-                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Culverts_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_Culverts_para{
                 height: 90%;
                 width: 90%;
-                background-color: white;
+                text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 150%;
+            }
+            h3{
+                font-family: inter;
+                font-size:1rem;
+            }
             }
         }
         #Culverts_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
+            background-color: white;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Culverts_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -270,31 +482,29 @@ body{
 .construction_Foundation{
     height: 80vh;
     width: 100%;
-    background-color: red;
     #inner_construction_Foundation{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
+        background-color: white;
         #Foundation_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Foundation_heading{
                 height: 90%;
                 width: 20%;
-                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Foundation_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -302,20 +512,35 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 150%;
+            }
             }
         }
         #Foundation_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Foundation_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
+            
         }
     }
 }
@@ -324,55 +549,81 @@ body{
 .road_construction_services{
     height: 100vh;
     width: 100%;
-    background-color: aliceblue;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_road_construction_services{
         height: 95%;
-        width: 95%;
-        background-color: saddlebrown;
+        width: 100%;
         #heading_road_construction{
             height: 15%;
             width: 100%;
-            background-color: rgb(88, 161, 224);
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_heading{
                 height: 90%;
                 width: 50%;
-                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: white;
+                color: #05003A;
             }
         }
         #main_road_construction{
             height: 85%;
             width: 100%;
-            background-color: cornsilk;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #left_road_construction{
                 height: 96%;
                 width: 60%;
-                background-color: violet;
+
+                #first_left_road_construction{
+                    height: 33%;
+                    width: 100%;
+                    text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 150%;
+            }
+                }
+                #second_left_road_construction{
+                    height: 67%;
+                    width: 100%;
+                    text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 2vh 2vw 2vh 2vw;
+                color: #05003A;
+                font-family: inter;
+                line-height: 150%;
+                span{
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+            }
+                    
+                }
+                
             }
             #right_road_construction{
                 height: 96%;
-                width: 30%;
-                background-color: aquamarine;
+                width:25%;
                 
                 #images_road_construction{
                     
-                    height: 32%;
-                    width: 85%;
-                    background-color: black;
-                    margin-top: 1vh;
-                    border-radius: 10px;
+                    
+                     
                 }
             }
         }
@@ -382,47 +633,54 @@ body{
 
 /* ROAD SAFETY TYPES CONTENTS---------------------------------------------------------------------- */
 .road_safety_types{
+    
     height: 50vh;
     width: 100%;
-    background-color: cornsilk;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_road_safety_types{
         height: 100%;
         width: 90%;
-        background-color: brown;
         #nav_road_safety{
             height: 20%;
             width: 100%;
-            background-color: #7692aa;
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_nav_road_safety{
                 height: 90%;
                 width: 30%;
-                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: white;
+                color: #05003A;
             }
         }
         #text_road_safety{
-            height: 80%;
+            height: 60%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_text_road_safety{
                 height: 90%;
                 width: 98%;
-                background-color: aliceblue;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: justify;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                
             }
         }
     }
@@ -449,56 +707,70 @@ body{
 .construction_Highway{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Highway{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
+        background-color: white;
         #Highway_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Highway_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Highway_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
             #inner_Highway_para{
                 height: 90%;
                 width: 90%;
-                background-color: white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
                 
             }
         }
         #Highway_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Highway_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
                 border-radius: 10px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 2vw;
+                    }
             }
         }
     }
@@ -508,31 +780,27 @@ body{
 .construction_Tollplaza{
     height: 80vh;
     width: 100%;
-    background-color: red;
     #inner_construction_Tollplaza{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Tollplaza_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Tollplaza_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Tollplaza_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -540,20 +808,40 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Tollplaza_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Tollplaza_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
                 border-radius: 10px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -562,31 +850,28 @@ body{
 .construction_Canopy{
     height: 80vh;
     width: 100%;
-    background-color: red;
     #inner_construction_Canopy{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
+        background-color: white;
         #Canopy_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Canopy_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color: #05003A;
             }
         }
         #Canopy_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -594,19 +879,40 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Canopy_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Canopy_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -615,31 +921,28 @@ body{
 .construction_MBCB{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_MBCB{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #MBCB_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_MBCB_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #MBCB_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -647,19 +950,39 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #MBCB_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #MBCB_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -668,31 +991,28 @@ body{
 .construction_Signages{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Signages{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Signages_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Signages_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Signages_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -700,19 +1020,39 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Signages_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Signages_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -722,31 +1062,28 @@ body{
 .construction_Thermoplastic{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Thermoplastic{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Thermoplastic_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Thermoplastic_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Thermoplastic_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -754,19 +1091,40 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Thermoplastic_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
+            
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Thermoplastic_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -775,31 +1133,28 @@ body{
 .construction_Road_Studs{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Road_Studs{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Road_Studs_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
             align-items: center;
             #inner_Road_Studs_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Road_Studs_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -807,19 +1162,41 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Road_Studs_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
+            
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Road_Studs_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -828,31 +1205,28 @@ body{
 .construction_Pedestrian{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Pedestrian{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Pedestrian_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color:#f5f5dc;
             display: flex;
             align-items: center;
             #inner_Pedestrian_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Pedestrian_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -860,19 +1234,40 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Pedestrian_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
+           
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Pedestrian_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -881,31 +1276,29 @@ body{
 .construction_Galvanised{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Galvanised{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Galvanised_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
+            
             align-items: center;
             #inner_Galvanised_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color:#05003A;
             }
         }
         #Galvanised_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -913,19 +1306,39 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Galvanised_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Galvanised_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -934,31 +1347,29 @@ body{
 .construction_Antiglare{
     height: 80vh;
     width: 100%;
-    background-color: red;
+    background-color: white;
     #inner_construction_Antiglare{
         height: 100%;
         width: 100%;
-        background-color: aliceblue;
         #Antiglare_heading{
             height: 14%;
             width: 100%;
-            background-color: navajowhite;
+            background-color: #f5f5dc;
             display: flex;
+
             align-items: center;
             #inner_Antiglare_heading{
                 height: 90%;
                 width: 40%;
-                background-color: black;
                 display: flex;
-                justify-content: center;
+                transform: translateX(5vw);
                 align-items: center;
-                color:white;
+                color: #05003A;
             }
         }
         #Antiglare_para{
             height: 40%;
             width: 100%;
-            background-color: saddlebrown;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -966,19 +1377,39 @@ body{
                 height: 90%;
                 width: 90%;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                text-align: justify;
+                
+                h3{
+                    padding:2vh 2vw 2vh 2vw;
+                    line-height: 150%;
+                    font-size:1.2rem;
+                    color: #05003A;
+                }
+                h3{
+                    font-family: inter;
+                    font-size:1rem;
+                }
             }
         }
         #Antiglare_images{
             height: 46%;
             width: 100%;
-            background-color: crimson;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             #Antiglare_image1{
                 height: 90%;
                 width: 26%;
-                background-color: black;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 2vw;
+                }
             }
         }
     }
@@ -987,10 +1418,10 @@ body{
 /* OUR HAPPY CLIENTS--------------------------------------------------------------------------------- */
 @keyframes moves {
     from{
-        transform:translateX(25%);
+        transform:translateX(0%);
     }
     to{
-        transform: translateX(calc(-165vw));
+        transform: translateX(calc(-1300%));
     }
     
 }
@@ -1002,50 +1433,166 @@ body{
     #clients_title{
         height: 15%;
         width: 100%;
-        background-color: rgb(72, 82, 92);
+        background-color: #F5F5DC;
         display: flex;
         justify-content: center;
         align-items: center;
         #clients_title_text{
             height: 90%;
-            width: 40%;
-            background-color: rgb(58, 55, 55);
-            color: white;
+            width: 60%;
             display: flex;
             justify-content: center;
             align-items: center;
+            color:#05003A;
         }
     }
 
     .clients_slider{
         height: 90%;
         width: 100%;
-        background-color: rgb(161, 138, 138);
+        /* background-color: rgb(161, 138, 138); */
         display: flex;
         justify-content: center;
         align-items: center;
         white-space: nowrap;
-        
+        background-color: #00703A;
         
         /* ?padding: 2vh; */
         #slider_container{
             
             height: 80%;
             width: 100%;
-            background-color: salmon;
             display: inline-block;
             align-content: center;
             white-space: nowrap;
-            #slides{
-                animation: moves 10s linear infinite;
+            .slides{
+                animation: moves 30s linear infinite;
                 height: 80%;
                 width: 30%;
-                background-color: black;
-                border-radius: 10px;
+                
                 display: inline-block;
                 overflow-x: hidden;
                 color: white;
-                position: relative;
+                overflow: hidden;
+                border: solid 0.8vh #000000;
+                border-radius: 10px;
+                /* img{
+                    height: 20%;
+                    width: 70%;
+                    transform: translateX(10vw);
+                    transform: translate(5vw,20vh);
+                } */
+                 img{
+                    object-fit: contain;
+                 }
+                 
+
+                 
+            }
+            #img2{
+                /* background-color: white;
+            
+                width: 30%;
+                background-color: #000000;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: fill;
+                } */
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+             }
+             #img1{
+                /* background-color: white;
+                width: 30%;
+                
+                img{
+                    transform: translateY(15vh);    
+                    width: 100%;
+                    ;
+                    object-fit: fill;
+                } */
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+             }
+             #img3{
+                /* background-color: white;
+            
+                width: 30%;
+                background-color: #000000;
+                img{
+                    
+                    width: 100%;
+                    object-fit: fill;
+                } */
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+             }
+             #img4{
+                /* background-color: red;
+                img{
+                    width: 100%;
+                    object-fit: fill;
+                    height: 100%;
+                } */
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+
+                
+             }
+             #img5{
+                /* background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                } */
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+            }
+            #img6{
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+            }
+            #img7{
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(40%);
+                }
+            }
+            #img8{
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: calc(20%);
+                }
             }
             
         }
@@ -1063,14 +1610,14 @@ body{
 .home_footer{
     height: 90vh;
     width: 100%;
-    background-color: chartreuse;
+    background-color: white;
+    font-size:1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     #inner_footer{
         height: 80%;
         width: 90%;
-        background-color: beige;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1080,26 +1627,166 @@ body{
     .five_inner{
         height: 90%;
         width: 19%;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
     }
     #five_logo{
         width:25%;
-        background-color: red;
+        #five_logo_text{
+            height: 20%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color:#05003A;
+            font-family: inter;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        #five_logo_image{
+            height: 80%;
+            width: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
     }
     #five_services{
         width: 19%;
-        background-color: rgb(122, 106, 106);
+        #five_services_h1{
+            height: 20%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color:#05003A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: inter;
+        }
+        #five_services_others{
+            height: 80%;
+            width: 100%;
+            font-family: inter;
+            text-align: center;
+            a{
+                text-decoration: none;
+            }
+            h4{
+                padding:2vh 2vw 2vh 2vw;
+                color:#05003A;
+                /* font-weight: 600; */
+            }
+        }
     }
     #five_companies{
         width: 19%;
-        background-color: rgb(18, 79, 87);
+        #five_Companies_h1{
+            height: 20%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color:#05003A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: inter;
+            
+        }
+        #five_Companies_others{
+            height: 80%;
+            width: 100%;
+            font-family: inter;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color:#05003A;
+            }
+            h4{
+                padding:2vh 2vw 2vh 2vw;
+                color:#05003A;
+                
+            }
+        }
     }
     #five_Contact{
         width: 19%;
-        background-color: rgb(185, 221, 255);
+        #five_Contact_h1{
+            height: 20%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color:#05003A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: inter;
+        }
+        #five_Contact_others{
+            height: 80%;
+            width: 100%;
+            font-family: inter;
+            text-align: center;
+            h4{
+                padding:2vh 2vw 2vh 2vw;
+                color:#05003A;
+            }
+        }
     }
     #five_address{
         width: 19%;
         background-color: rgb(141, 107, 107);
+        #five_Address_h1{
+            height: 20%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color:#05003A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: inter;
+        }
+        #five_Address_others{
+            height: 80%;
+            width: 100%;
+            background-color: white;
+            font-family: inter;
+            text-align: center;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            h4{
+                padding:2vh 2vw 2vh 2vw;
+                color:#05003A;
+                
+            }
+        }
+    }
+}
+
+.copyright{
+    height: 3vh;
+    width: 100%;
+    
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_copyright{
+        height: 90%;
+        width: 50%;
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size:0.6rem;
+            font-family: inter;
+            display: block; 
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
 }

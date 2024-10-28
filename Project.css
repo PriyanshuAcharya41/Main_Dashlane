@@ -6,14 +6,14 @@ body{
     height: 100vh;
     width: 100%;
     background-color: white;
-    font-size:1rem;
-}
-h3{
-    font-size:1.1rem;
 }
 @font-face {
     font-family: inter;
     src: url("Adamina-Regular.woff2");
+}
+h3{
+    font-family: inter;
+    font-size:1rem;
 }
 .navbar{
     height: 20vh;
@@ -89,275 +89,53 @@ h3{
         
     }
 }
-.title_consultancy{
-    height: 16%;
+#outer_construction_drain{
+    background-color: rgb(27, 103, 170);
+    height: 90%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    #inner_text{
-        height: 90%;
-        width: 70%;
-        display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #05003A;
-    }
 }
-.brochure{
-    height: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    #inner_brochure{
-        height: 90%;
-        width: 50%;
-        a{
-            height: 100%;
-            width: 100%;
-            text-decoration: none;
-            display: flex;
-        justify-content: center;
-        align-items: center;
-            button{
-                color:white;
-                height: 80%;
-                width: 40%;
-                font-family: inter;
-                background-color: #05003A;
-                border-style: none;
-                border-radius: 10vw;
-
-            }
-            button:hover{
-                font-size:1.5rem;
-            }
-        }
-    }
-}
-
-/* MAIN PAGE OF CONSULTANCY---------------------------------------------------------------------------- */
-.main_consultancy{
+.construction_drain{
     height: 80vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    #inner_main_consultancy{
-        height: 95%;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        #left_inner{
-            height: 96%;
-            width: 50%;
-            #left_upper{
-                height: 50%;
-                width: 100%;
-                text-align: justify;
-                h3{
-                    padding:4vh 2vw 2vh 2vw;
-                    font-family: inter;
-                    color: #05003A;
-                    line-height: 150%;
-                    font-size:1rem;
-                    text-align:justify;
-                }
-            }
-            #left_lower{
-                height: 50%;
-                width: 100%;
-                text-align: justify;
-                h3{
-                    padding:3vh 2vw 2vh 2vw;
-                    font-family: inter;
-                    color: #05003A;
-                    line-height: 150%;
-                    font-size:1rem;
-                }
-            }
-        }
-        #right_inner{
-            height: 100%;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: inter;
-            #right_image{
-                height: 80%;
-                width: 70%;
-                background-image: url("rams.jpg");
-                background-position: center;
-                background-size:cover;
-                border-radius: 2vw;
-            }
-        }
-    }
 
-}
-
-/* RAMS SERVICES------------------------------------------------------------------------------------ */
-.nav_rams{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F5DC;
-    #inner_nav_rams{
-        height: 90%;
-        width: 30%;
-        color:#05003A;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-.nsv_rams{
-    height: 70vh;
-    width: 100%;
-    #heading_nsv_rams{
-        height: 15%;
-        width:100%;
-        display: flex;
-        align-items: center;
-        background-color: #F5F5DC;
-        margin-top:2px;
-        #inner_heading_nsv_rams{
-            
-            height: 90%;
+    
+    #inner_construction_drain{
+        height: 100%;
+        width: 100%;
+        background-color: #f5f5dc;
+        
+        #drain_heading{
+            height: 14%;
             width: 100%;
-            transform: translateX(5vw);
-            color: #05003A;
-            overflow: hidden;
-            display: flex;
-            justify-content: flex-start;
-            /* background-color: red; */
-            align-items: center;
-        }
-    }
-    #text_image_nsv_rams{
-        height: 85%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        #left_nsv_rams{
-            height: 70%;
-            width: 40%;
-            text-align: justify;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h3{
-                padding: 2vh 2vw 2vh 2vw;
-                color: #05003A;
-                font-family: inter;
-                line-height: 150%;
-            }
-        }
-        #right_nsv_rams{
-            height: 76%;
-            width: 30%;
-            background-image: url("nsv.jpg");
-            background-position: center;
-            background-size: cover;
-            border-radius: 2vw;
-        }
-    }
-    
-}
+            align-content: center;
+            text-align: center;
+            font-family: inter;
+            color:#05003A;
+            /* #inner_drain_heading{
+                height: 90%;
+                width: 100%;
+                display: flex;
+                background-color: cadetblue;
+                h1{
+                    display: flex;
+                    justify-content: center;
+                }
 
-/* GRP RAMS---------------------------------------------------------------------------------------- */
-
-.grp_rams{
-    height: 70vh;
-    width: 100%;
-    background-color: #F5F5DC;
-    #heading_grp_rams{
-        height: 15%;
-        width:100%;
-        display: flex;
-        align-items: center;
-        #inner_heading_grp_rams{
-            height: 90%;
-            width: 50%;
-            margin-left:5vw;
-            color: #05003A;
-            overflow: hidden;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+                
+            } */
         }
-    }
-    #text_image_grp_rams{
-        height: 85%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: white;
-        #left_grp_rams{
-            height: 76%;
-            width: 30%;
-            background-image: url("gpr.jpg");
-            background-position: center;
-            background-size: cover;
-            border-radius: 2vw;
-        }
-        #right_grp_rams{
-            height: 70%;
-            width: 40%;
-            text-align: justify;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h3{
-                padding: 2vh 2vw 2vh 2vw;
-                color: #05003A;
-                font-family: inter;
-                line-height: 150%;
-            }
+        #drain_para{
             
-        }
-    }
-    
-}
-/* FWD RAMS-------------------------------------------------------------------------------------- */
-
-.fwd_rams{
-    height: 70vh;
-    width: 100%;
-    #heading_fwd_rams{
-        height: 15%;
-        width:100%;
-        background-color: #F5F5DC;
-        display: flex;
-        align-items: center;
-        #inner_heading_fwd_rams{
-            height: 90%;
-            width: 50%;
-            margin-left:5vw;
-            color: #05003A;
-            overflow: hidden;
+            height: 20%;
+            width: 100%;
+            background-color: white;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-        }
-    }
-    #text_image_fwd_rams{
-        height: 85%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        #left_fwd_rams{
-            height: 70%;
-            width: 40%;
-            text-align: justify;
+            #inner_drain_para{
+                height: 90%;
+                width: 90%;
+                text-align: justify;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -367,180 +145,96 @@ h3{
                 font-family: inter;
                 line-height: 150%;
             }
-        }
-        #right_fwd_rams{
-            height: 86%;
-            width: 30%;
-            background-image: url("fwd.jpg");
-            background-position: center;
-            background-size: cover;
-            border-radius: 2vw;
-        }
-    }
-    
-}
-/* ATCC RAMS----------------------------------------------------------------------------------- */
-
-.atcc_rams{
-    height: 70vh;
-    width: 100%;
-    #heading_atcc_rams{
-        height: 15%;
-        width:100%;
-        background-color: #F5F5DC;
-        display: flex;
-        align-items: center;
-        #inner_heading_atcc_rams{
-            height: 90%;
-            width: 50%;
-            margin-left:5vw;
-            color: #05003A;
-            overflow: hidden;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-    }
-    #text_image_atcc_rams{
-        height: 85%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        #left_atcc_rams{
-            height: 86%;
-            width: 30%;
-            background-image: url("atcc.jpeg");
-            background-position: center;
-            background-size: cover;
-            border-radius: 2vw;
-        }
-        #right_atcc_rams{
-            height: 70%;
-            width: 40%;
-            text-align: justify;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h3{
-                padding: 2vh 2vw 2vh 2vw;
-                color: #05003A;
-                font-family: inter;
-                line-height: 150%;
             }
+        }
+        #drain_images{
+            height: 66%;
+            width: 100%;
+            background-color: white;
             
-        }
-    }
-    
-}
-/* RETRO REFLECTOR --------------------------------------------------------------------------------- */
-
-.retro_reflector{
-    height: 70vh;
-    width: 100%;
-    #heading_retro_reflector{
-        height: 15%;
-        width:100%;
-        background-color: #F5F5DC;
-        display: flex;
-        align-items: center;
-        #inner_heading_retro_reflector{
-            height: 90%;
-            width: 50%;
-            margin-left:5vw;
-            color: #05003A;
-            overflow: hidden;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-evenly;
             align-items: center;
-        }
-    }
-    #text_image_retro_reflector{
-        height: 85%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        #left_retro_reflector{
-            height: 70%;
-            width: 40%;
-            text-align: justify;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h3{
-                padding: 2vh 2vw 2vh 2vw;
-                color: #05003A;
-                font-family: inter;
-                line-height: 150%;
+            #drain_image1{
+                height: 90%;
+                width: 20%;
+                border-radius: 2vw;
+                background-color: #f5f5dc;
+                align-content: center;
+                h3{
+                    color:#05003A;
+                    text-align: justify;
+                    font-family: inter;
+                    font-size:1rem;
+                    font-weight: 500;
+                    padding:0vh 2vw 0vh 2vw;
+                }
             }
         }
-        #right_retro_reflector{
-            height: 86%;
-            width: 30%;
-            background-image: url("retro.png");
-            background-position: center;
-            background-size: cover;
-            border-radius: 2vw;
-        }
     }
-    
 }
-/* MBIU RAMS---------------------------------------------------------------------------------------- */
 
-.mbiu_rams{
-    height: 70vh;
+.project_completed{
+    height: 100%;
     width: 100%;
-    #heading_mbiu_rams{
-        height: 15%;
-        width:100%;
-        background-color: #F5F5DC;
-        display: flex;
-        align-items: center;
-        #inner_heading_mbiu_rams{
-            height: 90%;
-            width: 50%;
-            margin-left:5vw;
-            color: #05003A;
-            overflow: hidden;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #inner_project_completed{
+        height: 99%;
+        width: 98%;
+        background-color: #f5f5dc;
+
+        #heading_project_completed{
+            height: 15%;
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            color:#05003A;
+            font-family: inter;
+            font-size:1rem;
         }
-    }
-    #text_image_mbiu_rams{
-        height: 85%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        #left_mbiu_rams{
-            height: 86%;
-            width: 30%;
-            background-image: url("mbiu.jpeg");
-            background-position: center;
-            background-size: cover;
-            border-radius: 2vw;
-        }
-        #right_mbiu_rams{
-            height: 70%;
-            width: 40%;
-            text-align: justify;
+
+        #second_project_completed{
+            height: 84%;
+            width: 100%;
+            background-color: white;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-            h3{
-                padding: 2vh 2vw 2vh 2vw;
-                color: #05003A;
-                font-family: inter;
-                line-height: 150%;
+            #left_second_project_completed{
+                height: 100%;
+                width: 38%;
+                background-color: white;
+                align-content: center;  
+                h3{
+                    color:#05003A;
+                    font-family: inter;
+                    font-size: 1rem;
+                    text-align: justify;
+                    padding:0vh 2vw 0vh 2vw;
+                    font-family: 500;
+                    line-height: 150%;
+                    li{
+                        font-weight: 300;
+                    }
+                }
             }
-            
+            #right_second_project_completed{
+                height: 90%;
+                width: 48%;
+                overflow: hidden;
+                img{
+                    object-fit: contain;
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
         }
     }
-    
 }
-/* OUR HAPPY CLIENTS----------------------------------------------------------------------------------- */
+
 @keyframes moves {
     from{
         transform:translateX(0%);
@@ -736,10 +430,10 @@ h3{
     height: 90vh;
     width: 100%;
     background-color: white;
+    font-size:1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:1rem;
     #inner_footer{
         height: 80%;
         width: 90%;
@@ -887,7 +581,6 @@ h3{
         }
     }
 }
-
 
 .copyright{
     height: 3vh;
